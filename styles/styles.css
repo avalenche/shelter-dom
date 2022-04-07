@@ -1,0 +1,241 @@
+/*** reset styles ***/
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  color: #000;
+  background: #FFF
+}
+
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: inherit;
+  outline: none !important;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  display: inline-block;
+  border: 0;
+}
+
+address,
+button,
+caption,
+cite,
+code,
+dfn,
+em,
+input,
+optgroup,
+option,
+select,
+strong,
+textarea,
+th,
+var {
+  font: inherit;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+del,
+ins {
+  text-decoration: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+sup {
+  vertical-align: baseline;
+}
+
+sub {
+  vertical-align: baseline;
+}
+
+legend {
+  color: #000;
+}
+
+
+label {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+svg {
+  transition: fill 0.3s ease;
+}
+
+/*** Content ***/
+
+title {
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+  
+  align-items: center;
+  letter-spacing: 0.06em;
+  
+  /* color-primary */
+  
+  color: #F1CDB3;
+}
+
+body {
+  margin: 35px auto;
+  font-family: Georgia, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.15;
+
+  color: #000;
+  background-color: #FFF;
+
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+/*
+.btn {
+  display: inline-block;
+
+  padding: 10px 46px;
+
+  color: #FFF;
+
+  background-color: #FB8F1D;
+  border: 1px solid #FB8F1D;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #FB8F1D;
+
+  background-color: #fff;
+}
+
+.h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.25;
+
+  color: #202336;
+}
+*/
+/*** Header **/
+
+.header {
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%)
+  ,#211F20;
+}
+
+/** Navigation **/
