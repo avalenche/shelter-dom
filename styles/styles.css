@@ -11,9 +11,8 @@
 
 html {
   color: #000;
-  background: #FFF
+  background: #fff;
 }
-
 
 body,
 div,
@@ -49,7 +48,6 @@ span {
   box-sizing: border-box;
   outline: none;
 }
-
 
 ul,
 ol {
@@ -134,7 +132,7 @@ h6,
 
 q:before,
 q:after {
-  content: '';
+  content: "";
 }
 
 abbr,
@@ -155,7 +153,6 @@ legend {
   color: #000;
 }
 
-
 label {
   font-weight: 500;
   margin-bottom: 0;
@@ -173,10 +170,9 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 1.15;
-  
 
   color: #000;
-  background-color: #FFF;
+  background-color: #fff;
 
   cursor: url(../icon/a-arr.svg), default;
 }
@@ -210,10 +206,10 @@ button:hover {
   line-height: 130%;
 
   letter-spacing: 0.06em;
-  
+
   color: #292929;
 
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   border: none;
   border-radius: 100px;
 
@@ -223,11 +219,10 @@ button:hover {
 }
 
 .btn:hover {
-   background-color: #FDDCC4;
+  background-color: #fddcc4;
 }
 
 /*** Header **/
-
 
 /** Navigation **/
 
@@ -237,43 +232,46 @@ button:hover {
   left: 0;
   z-index: 10;
   width: 100%;
-  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #5B483A 0%, #1A1A1C 100%), #211F20;}
+  background: radial-gradient(
+      110.67% 538.64% at 5.73% 50%,
+      #5b483a 0%,
+      #1a1a1c 100%
+    ),
+    #211f20;
+}
 
 .container_1 {
-    max-width: 1280px;
-    
-    margin: 0 auto;
-    padding: 30px 40px;
-     
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  max-width: 1280px;
 
+  margin: 0 auto;
+  padding: 30px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation-logo {
   z-index: 5;
 }
 
-
 .menu-icon {
-  display: none;  
+  display: none;
 }
-
 
 .h1 {
   font-family: Georgia, Arial;
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.06em;
-   
-  color: #F1CDB3;
+
+  color: #f1cdb3;
 
   margin-bottom: 10px;
 }
 
 .navigation p {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
@@ -281,19 +279,19 @@ button:hover {
 }
 
 .navigation-logo:hover .h1,
-.navigation-logo:hover p{
+.navigation-logo:hover p {
   opacity: 0.7;
 }
 
 .navigation-nav {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-size: 15px;
   line-height: 160%;
 
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
 
-.navigation-nav-list  a:hover {
+.navigation-nav-list a:hover {
   color: #fafafa;
 }
 
@@ -306,7 +304,6 @@ button:hover {
   position: relative;
   width: fit-content;
   color: #fafafa;
-  
 }
 
 .active::after {
@@ -317,7 +314,7 @@ button:hover {
   content: "";
   width: 100%;
   height: 3px;
-  background: #F1CDB3;
+  background: #f1cdb3;
 }
 
 .navigation-nav-list > li {
@@ -330,10 +327,14 @@ button:hover {
 
 /****Section-1****/
 
-
 .section-1 {
-  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #5B483A 0%, #1A1A1C 100%), #211F20;
-  
+  background: radial-gradient(
+      110.67% 538.64% at 5.73% 50%,
+      #5b483a 0%,
+      #1a1a1c 100%
+    ),
+    #211f20;
+
   margin-top: 120px;
   padding-top: 220px;
   min-height: 728px;
@@ -342,7 +343,7 @@ button:hover {
 .section-1 > .flex {
   display: flex;
   justify-content: space-between;
-  }
+}
 
 .section-1-section {
   margin-bottom: 20px;
@@ -355,25 +356,24 @@ button:hover {
 
   font-size: 44px;
   line-height: 130%;
-    
-  color: #FFFFFF;
+
+  color: #ffffff;
 }
 
 .section-1-section p {
   margin-bottom: 40px;
 
-  font-family: 'Arial';
+  font-family: "Arial";
   font-size: 15px;
   line-height: 160%;
 
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
 
 .section-1-rel {
   width: 698px;
   height: 558px;
   position: relative;
-
 }
 
 .section-1-img {
@@ -384,7 +384,6 @@ button:hover {
   right: 0;
   bottom: 0;
 }
-
 
 /***Section-2****/
 
@@ -414,7 +413,7 @@ button:hover {
   max-width: 430px;
   font-size: 15px;
   line-height: 160%;
-  color: #4C4C4C;
+  color: #4c4c4c;
   font-family: Arial;
   margin-bottom: 25px;
 }
@@ -422,36 +421,77 @@ button:hover {
 /***Section-3****/
 
 .section-3 {
-  background-color: rgb(177, 101, 9);
+  padding: 80px 0px 100px 0px;
+
+  background-color: #f6f6f6;
+
+  text-align: center;
 }
 
+/***Swiper****/
+
+.swiper {
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-bottom: 30px;
+}
+
+.swiper-slide-container {
+  width: 270px;
+  border-radius: 9px;
+  background-color: #fff;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+.swiper-slide-container:hover {
+  opacity: 1;
+}
+.swiper-slide-images {
+  padding-bottom: 30px;
+}
+
+.swiper-slide-images img {
+  width: 100%;
+}
+
+.swiper-slide-container .btn {
+  background-color: #fff;
+  border: 2px solid #f1cdb3;
+}
+.swiper-slide-container .btn:hover {
+  background-color: #f1cdb3;
+}
 
 /* Media
 =================*/
 
 @media (max-width: 1279px) {
-
   /***Header***/
   .section-1 {
-    margin-top:90px;
+    margin-top: 90px;
     padding-top: 60px;
     min-height: 358px;
   }
   .container_1 {
-      margin: 0 auto;
-      padding: 30px;
+    margin: 0 auto;
+    padding: 30px;
   }
 
   .section-1-rel {
-    width: 558px;    
+    width: 558px;
   }
-
 }
 
 /* 768 */
 
 @media (max-width: 767px) {
-
   .container {
     padding: 0 30px;
   }
@@ -469,7 +509,7 @@ button:hover {
     width: 30px;
     height: 22px;
     cursor: url(../icon/a-hand.svg), pointer;
-    transition: all 0.3s ;
+    transition: all 0.3s;
   }
 
   .menu-icon::before,
@@ -480,7 +520,7 @@ button:hover {
     height: 10%;
     width: 100%;
     transition: all 0.3s ease 0s;
-    background-color: #F1CDB3;
+    background-color: #f1cdb3;
   }
 
   .menu-icon::before,
@@ -489,7 +529,7 @@ button:hover {
   }
 
   .menu-icon::before {
-    top:0;
+    top: 0;
   }
 
   .menu-icon::after {
@@ -531,7 +571,7 @@ button:hover {
 
     padding: 250px 39px 40px 39px;
     text-align: center;
-    transition: left 0.3s ease 0s ;
+    transition: left 0.3s ease 0s;
     overflow: auto;
   }
 
@@ -547,24 +587,27 @@ button:hover {
     top: 0;
     left: 0;
     height: 120px;
-    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #5B483A 0%, #1A1A1C 100%), #211F20;
+    background: radial-gradient(
+        110.67% 538.64% at 5.73% 50%,
+        #5b483a 0%,
+        #1a1a1c 100%
+      ),
+      #211f20;
     z-index: 2;
-
   }
 
   .navigation-nav._active::before {
-    
     background: #292929;
   }
   .navigation-nav-list {
     flex-direction: column;
   }
-  
-  .navigation-nav-list>li {
-    margin:0px 0px 40px 0px;
+
+  .navigation-nav-list > li {
+    margin: 0px 0px 40px 0px;
   }
 
-  .navigation-nav-list>li:last-child {
+  .navigation-nav-list > li:last-child {
     margin: 0px 0px 40px 0px;
   }
 
@@ -572,23 +615,21 @@ button:hover {
     font-size: 32px;
   }
 
-/****Section-1****/
+  /****Section-1****/
 
   .section-1 {
     padding-top: 60px;
     min-height: 358px;
   }
 
-  .section-1 >.flex {
+  .section-1 > .flex {
     flex-direction: column;
     align-items: center;
-
   }
 
   .section-1-section {
     margin-bottom: 100px;
   }
-
 
   .section-1-section .btn {
     display: block;
@@ -597,39 +638,34 @@ button:hover {
 
   .section-1-rel {
     height: auto;
-    width:auto;
+    width: auto;
     max-width: 569px;
-    
   }
 
   .section-1-img {
-    position:relative;
-
+    position: relative;
   }
 
   /***Section-2****/
 
-.section-2>.flex {
-  display: flex;
-  flex-flow: column-reverse;
-}
+  .section-2 > .flex {
+    display: flex;
+    flex-flow: column-reverse;
+  }
 
-.section-2-rel {
-  margin: 55px 0 0 0;
-}
-
-
+  .section-2-rel {
+    margin: 55px 0 0 0;
+  }
 }
 
 @media (max-width: 374px) {
-
   .container_1 {
     padding: 30px 50px 30px 10px;
   }
   .container {
     padding: 0 10px;
   }
-  
+
   .h2,
   .h3 {
     font-size: 25px;
@@ -638,22 +674,20 @@ button:hover {
 
   p {
     text-align: justify;
-
   }
 
-/***Section-1****/
-.section-1-section {
-  padding: 0px 15px;
-}
+  /***Section-1****/
+  .section-1-section {
+    padding: 0px 15px;
+  }
 
-/***Section-2****/
+  /***Section-2****/
 
-.section-2 {
-  padding: 40px 15px;
-}
+  .section-2 {
+    padding: 40px 15px;
+  }
 
-.section-2-rel {
-  margin-top: 15px;
-}
-
+  .section-2-rel {
+    margin-top: 15px;
+  }
 }
