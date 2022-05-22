@@ -7,7 +7,9 @@ if (iconMenu) {
     document.body.classList.toggle("_lock");
     iconMenu.classList.toggle("_active");
     menuBody.classList.toggle("_active");
+    console.log(iconMenu, menuBody);
   });
+  console.log(iconMenu, menuBody);
 }
 
 //scroll by click
@@ -46,9 +48,6 @@ if (menuLinks.length > 0) {
 
 //Swiper
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 90,
-
   // Optional parameters
   /*direction: "horizontal",
   loop: true,
@@ -64,9 +63,36 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
+  /* And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: true,
+  },*/
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 90,
+    },
   },
 });
+
+//Popup menu
+
+const popupMenu = document.querySelector(".popup-link");
+
+if (popupMenu) {
+  popupMenu.addEventListener("onclick", function () {
+    popupMenu.classList.toggle("hi");
+    console.log(popupMenu);
+  });
+  console.log(popupMenu);
+}
