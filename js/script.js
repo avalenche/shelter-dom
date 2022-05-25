@@ -7,9 +7,7 @@ if (iconMenu) {
     document.body.classList.toggle("_lock");
     iconMenu.classList.toggle("_active");
     menuBody.classList.toggle("_active");
-    console.log(iconMenu, menuBody);
   });
-  console.log(iconMenu, menuBody);
 }
 
 //scroll by click
@@ -87,12 +85,75 @@ const swiper = new Swiper(".swiper", {
 
 //Popup menu
 
-const popupMenu = document.querySelector(".popup-link");
-
+const popupMenu = document.querySelectorAll(".popup-link");
+/*
 if (popupMenu) {
-  popupMenu.addEventListener("onclick", function () {
-    popupMenu.classList.toggle("hi");
-    console.log(popupMenu);
+  popupMenu.forEach((el) => {
+    el.addEventListener("click", function (e) {
+      const popupName = el.getAttribute("href").replace("#", "");
+      const curentPopup = document.getElementById(popupName);
+      curentPopup.classList.toggle("_active");
+      document.body.classList.toggle("_lock");
+      e.preventDefault();
+    });
   });
-  console.log(popupMenu);
 }
+*/
+if (popupMenu) {
+  popupMenu.forEach((el) => {
+    el.addEventListener("click", function (e) {
+      const popupName = el.getAttribute("href").replace("#", "");
+      const curentPopup = document.getElementById(popupName);
+      popupOpen(curentPopup);
+      e.preventDefault();
+    });
+  });
+}
+
+function popupOpen(curentPopup) {
+  if (curentPopup) {
+    curentPopup.classList.toggle("_active");
+    document.body.classList.toggle("_lock");
+  }
+}
+
+function popupClose(curentPopup) {
+  if (curentPopup) {
+    curentPopup.classList.remove("_active");
+    document.body.classList.remove("_lock");
+  }
+}
+
+//const popupLinkActive = document.querySelector(".popup-link._active");
+/*const popupClose = document.querySelectorAll(".popup_close");
+if (popupClose) {
+  popupClose.forEach((el) => {
+    el.addEventListener("click", function (e) {
+      const popupLinkActive = document.querySelector(".popup._active");
+      document.body.classList.remove("_lock");
+      if (popupLinkActive) {
+        popupLinkActive.classList.remove("_active");
+      }
+      e.preventDefault();
+    });
+  });
+}
+*/
+
+const popupCloseActive = document.querySelectorAll(".popup_close");
+if (popupCloseActive) {
+  popupCloseActive.forEach((el) => {
+    el.addEventListener("click", function (e) {
+      const popupLinkActive = document.querySelector(".popup._active");
+      popupClose(popupLinkActive);
+      e.preventDefault();
+    });
+  });
+}
+
+document.addEventListener("keydown", function (el) {
+  if (el.which === 27) {
+    const popupActive = document.querySelector(".popup._active");
+    popupClose(popupActive);
+  }
+});
