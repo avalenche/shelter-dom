@@ -1,5 +1,5 @@
 "use strict";
-// menun burger
+//*******menun burger***********
 const iconMenu = document.querySelector(".menu-icon");
 const menuBody = document.querySelector(".navigation-nav");
 if (iconMenu) {
@@ -44,7 +44,7 @@ if (menuLinks.length > 0) {
   }
 }
 
-//Swiper
+//**********Swiper*************
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   /*direction: "horizontal",
@@ -83,7 +83,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-//Popup menu
+//*********Popup menu************
 
 const popupMenu = document.querySelectorAll(".popup-link");
 /*
@@ -99,6 +99,9 @@ if (popupMenu) {
   });
 }
 */
+
+//oppening popup menu
+
 if (popupMenu) {
   popupMenu.forEach((el) => {
     el.addEventListener("click", function (e) {
@@ -109,14 +112,14 @@ if (popupMenu) {
     });
   });
 }
-
+// function oppening popup menu
 function popupOpen(curentPopup) {
   if (curentPopup) {
     curentPopup.classList.toggle("_active");
     document.body.classList.toggle("_lock");
   }
 }
-
+//  function closening popup menu
 function popupClose(curentPopup) {
   if (curentPopup) {
     curentPopup.classList.remove("_active");
@@ -139,7 +142,7 @@ if (popupClose) {
   });
 }
 */
-
+// closening popup menu on click button on menu
 const popupCloseActive = document.querySelectorAll(".popup_close");
 if (popupCloseActive) {
   popupCloseActive.forEach((el) => {
@@ -150,7 +153,7 @@ if (popupCloseActive) {
     });
   });
 }
-
+// closening popup menu on click button "esc"
 document.addEventListener("keydown", function (el) {
   if (el.which === 27) {
     const popupActive = document.querySelector(".popup._active");
