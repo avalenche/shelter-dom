@@ -382,6 +382,7 @@ button:hover {
 }
 
 .section-1-rel {
+  margin-left: 20px;
   width: 698px;
   height: 558px;
   position: relative;
@@ -404,12 +405,17 @@ button:hover {
 
 .section-2 > .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .section-2-rel {
-  margin-right: 120px;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.section-2-img {
+  width: 100%;
 }
 
 .section-2 .h3 {
@@ -639,6 +645,64 @@ button:hover {
   width: 100%;
 }
 
+/***Section-5****/
+
+.section-5 {
+  color: #545454;
+  background-color: #f6f6f6;
+  padding: 80px 0px 100px 0px;
+}
+
+.section-5 > .flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-5-rel {
+  max-width: 505px;
+  margin-right: 20px;
+}
+
+.section-5-img {
+  width: 100%;
+}
+
+.section-5 .h3 {
+  margin-bottom: 20px;
+}
+
+.section-5-section-card {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background: #f1cdb3;
+  border-radius: 9px;
+}
+
+.section-5-section-card > img {
+  padding-right: 15px;
+}
+
+.section-5-section-card span {
+  font-size: 20px;
+  line-height: 115%;
+}
+
+.section-5-section p {
+  max-width: 430px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.section-5-section i {
+  font-size: 12px;
+  line-height: 150%;
+  color: #b2b2b2;
+  font-family: Arial;
+}
+
 /* Media
 =================*/
 
@@ -835,6 +899,7 @@ button:hover {
   }
 
   .section-1-rel {
+    margin-left: 0;
     height: auto;
     width: auto;
     max-width: 569px;
@@ -855,6 +920,7 @@ button:hover {
     margin: 55px 0 0 0;
   }
 
+  /***Swiper***/
   .swiper {
     padding: 0px;
   }
@@ -909,6 +975,15 @@ button:hover {
   .section-4-img img {
     width: 100%;
   }
+  /***Section-5***/
+  .section-5 > .flex {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .section-5-rel {
+    margin: 40px 0 0 0;
+  }
 }
 
 @media (max-width: 374px) {
@@ -942,5 +1017,18 @@ button:hover {
 
   .section-2-rel {
     margin-top: 15px;
+  }
+
+  /****Section-5*****/
+  .section-5 {
+    padding: 40px 15px;
+  }
+
+  .section-5-rel {
+    margin-top: 15px;
+  }
+
+  .section-5-section-card span {
+    font-size: 15px;
   }
 }
