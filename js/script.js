@@ -86,20 +86,6 @@ const swiper = new Swiper(".swiper", {
 //*********Popup menu************
 
 const popupMenu = document.querySelectorAll(".popup-link");
-/*
-if (popupMenu) {
-  popupMenu.forEach((el) => {
-    el.addEventListener("click", function (e) {
-      const popupName = el.getAttribute("href").replace("#", "");
-      const curentPopup = document.getElementById(popupName);
-      curentPopup.classList.toggle("_active");
-      document.body.classList.toggle("_lock");
-      e.preventDefault();
-    });
-  });
-}
-*/
-
 //oppening popup menu
 
 if (popupMenu) {
@@ -126,22 +112,6 @@ function popupClose(curentPopup) {
     document.body.classList.remove("_lock");
   }
 }
-
-//const popupLinkActive = document.querySelector(".popup-link._active");
-/*const popupClose = document.querySelectorAll(".popup_close");
-if (popupClose) {
-  popupClose.forEach((el) => {
-    el.addEventListener("click", function (e) {
-      const popupLinkActive = document.querySelector(".popup._active");
-      document.body.classList.remove("_lock");
-      if (popupLinkActive) {
-        popupLinkActive.classList.remove("_active");
-      }
-      e.preventDefault();
-    });
-  });
-}
-*/
 // closening popup menu on click button on menu
 const popupCloseActive = document.querySelectorAll(".popup_close");
 if (popupCloseActive) {
