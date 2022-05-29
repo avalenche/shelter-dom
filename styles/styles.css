@@ -302,32 +302,110 @@ button:hover {
   color: #cdcdcd;
 }
 
-.navigation-nav-list a:hover {
-  color: #fafafa;
-}
-
 .navigation-nav-list {
   display: flex;
   flex-direction: row;
 }
 
+/*
+.navigation-nav-list a:hover {
+  color: #fafafa;
+}
+
 .active {
   position: relative;
   width: fit-content;
-  color: #fafafa;
 }
 
 .active::after {
   position: absolute;
-  left: 0;
+  left: 50%;
+
   bottom: -3px;
 
   content: "";
-  width: 100%;
+  width: 0;
   height: 3px;
   background: #f1cdb3;
+  opacity: 0;
+  transition: all 0.6s ease 0s;
 }
 
+.active::before {
+  position: absolute;
+  right: 50%;
+
+  bottom: -3px;
+
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #f1cdb3;
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.active:hover::before {
+  right: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.active:hover::after {
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+*/
+.menu_link:hover {
+  color: #fafafa;
+}
+
+.menu_link {
+  position: relative;
+  width: fit-content;
+}
+
+.menu_link::after {
+  position: absolute;
+  left: 50%;
+
+  bottom: -3px;
+
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #f1cdb3;
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.menu_link::before {
+  position: absolute;
+  right: 50%;
+
+  bottom: -3px;
+
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #f1cdb3;
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.menu_link:hover::before {
+  right: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.menu_link:hover::after {
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+/*************************/
 .navigation-nav-list > li {
   margin-right: 35px;
 }
