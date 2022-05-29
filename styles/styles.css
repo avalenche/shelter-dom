@@ -612,7 +612,7 @@ button:hover {
   align-items: center;
   background-color: #fff;
   color: #545454;
-  padding: 80px 0px 100px 0px;
+  padding: 80px 0px 45px 0px;
 }
 
 .section-4 .h3 {
@@ -625,7 +625,6 @@ button:hover {
   align-items: baseline;
   flex-wrap: wrap;
   padding: 0 90px;
-  margin-bottom: 45px;
 }
 
 .section-4-icon > li {
@@ -702,6 +701,64 @@ button:hover {
   color: #b2b2b2;
   font-family: Arial;
 }
+/****Footer***/
+
+.footer {
+  padding-top: 40px;
+  background: radial-gradient(
+      110.67% 538.64% at 5.73% 50%,
+      #5b483a 0%,
+      #1a1a1c 100%
+    ),
+    #211f20;
+}
+
+.footer .h3 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+  margin-bottom: 40px;
+}
+
+.footer_flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.footer_sec_1,
+.footer_sec_2,
+.footer_sec_3 {
+  width: 300px;
+}
+
+.footer_sec_1,
+.footer_sec_2 {
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+.footer_sec_1 img,
+.footer_sec_2 img {
+  padding-right: 20px;
+}
+
+.footer_sec_3 {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.footer_sec_3 img {
+  display: block;
+  width: 100%;
+}
 
 /* Media
 =================*/
@@ -713,10 +770,10 @@ button:hover {
     padding-top: 60px;
     min-height: 358px;
   }
-  .container_1 {
+  /*.container_1 {
     margin: 0 auto;
     padding: 30px;
-  }
+  }*/
 
   .section-1-rel {
     width: 558px;
@@ -747,7 +804,7 @@ button:hover {
   }
 }
 
-/* 768 */
+/* 767 */
 
 @media (max-width: 767px) {
   .container {
@@ -949,9 +1006,6 @@ button:hover {
   }
 
   /*Section-4*/
-  .section-4 {
-    padding: 40px 0px 10px 0px;
-  }
 
   .section-4 .h3 {
     margin-bottom: 40px;
@@ -959,7 +1013,6 @@ button:hover {
 
   .section-4-icon {
     padding: 0 15px;
-    margin-bottom: 45px;
   }
 
   .section-4-icon > li {
@@ -980,9 +1033,19 @@ button:hover {
     display: flex;
     flex-flow: column-reverse;
   }
-
   .section-5-rel {
     margin: 40px 0 0 0;
+  }
+  /***Footer***/
+
+  .footer {
+    padding-top: 30px;
+  }
+
+  .footer_sec_3 {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 0 20px;
   }
 }
 
@@ -1019,6 +1082,16 @@ button:hover {
     margin-top: 15px;
   }
 
+  /**Section-3**/
+  .section-3 {
+    padding: 40px 15px;
+  }
+
+  /**Section-4**/
+  .section-4 {
+    padding: 40px 15px 10px 15px;
+  }
+
   /****Section-5*****/
   .section-5 {
     padding: 40px 15px;
@@ -1030,5 +1103,10 @@ button:hover {
 
   .section-5-section-card span {
     font-size: 15px;
+  }
+
+  .footer_sec_3 {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }

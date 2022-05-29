@@ -154,9 +154,12 @@ if (popupCloseActive) {
   });
 }
 // closening popup menu on click button "esc"
-document.addEventListener("keydown", function (el) {
-  if (el.which === 27) {
-    const popupActive = document.querySelector(".popup._active");
-    popupClose(popupActive);
-  }
-});
+if (popupCloseActive.length > 0) {
+  document.addEventListener("keydown", function (el) {
+    if (el.which === 27) {
+      const popupActive = document.querySelector(".popup._active");
+      popupClose(popupActive);
+      console.log(popupCloseActive);
+    }
+  });
+}
